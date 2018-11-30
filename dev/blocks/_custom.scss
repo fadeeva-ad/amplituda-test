@@ -1,0 +1,33 @@
+@import 'variables';
+.custom {
+  width: 100%;
+  padding-top: 30px;
+
+  &__wrapper {  
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 30px;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__logo-container {
+    width: auto;
+    padding: 0 15px;
+
+    @include tablet {
+      max-width: 33%;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__text {
+    line-height: 1.5;
+    margin-top: 0;
+  }
+}

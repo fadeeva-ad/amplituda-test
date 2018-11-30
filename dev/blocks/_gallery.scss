@@ -17,7 +17,14 @@
     @include desktop {  
       max-width: 25%;
     }
+    &_press {
+      margin-bottom: 30px;
+      max-width: 33%;
+    }
 
+    &_gallery {
+      max-width: 33%;
+    }
   }
 
   &__link {
@@ -30,6 +37,19 @@
     margin-bottom: 15px;
     margin-bottom: 5px;
 
+    &_press {
+      padding-bottom: 150%;
+    }
+
+    &_gallery {
+      padding-bottom: 150%;
+      background-position: center bottom;
+      background-size: contain;
+
+      &-mod {
+        background-position: right bottom;
+      }
+    }
     // hover with gray background for pictures in gallery
     
     //попробовать сделать 2 способом : стилизовать с помощью дочернего дива:hover в ссылке
@@ -79,7 +99,6 @@
     text-align: center;
     padding: 0;
     margin: 5px 0 0 0;
-    height: 25px;
     font-size: 15px;
   }
 }

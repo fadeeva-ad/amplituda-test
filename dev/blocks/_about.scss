@@ -1,0 +1,69 @@
+@import 'variables';
+.about {
+  width: 100%;
+  padding-top: 30px;
+
+  &__wrapper {  
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 30px;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__logo-container {
+    width: auto;
+    padding: 0 15px;
+
+    @include tablet {
+      max-width: 33%;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__text {
+    line-height: 1.5;
+    margin-top: 0;
+  }
+
+  &__ph-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__ph-item{
+    width: 200px;
+    height: 134px;
+
+    &_vertical {
+      width: 180px;
+      height: 240px;
+
+      @include tablet {
+        margin-right: 20px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }     
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
