@@ -1,0 +1,42 @@
+@import 'variables';
+
+.main-slider {
+  width: 100%;
+
+  &__wrapper {
+    width: 100%;
+    padding: 0px 15px;
+
+  }
+
+  &__list {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__logo-box {
+    width: 100%;
+    height: auto;
+  }
+
+  &__logo {
+    width: 100%;
+    height: auto;
+  }
+
+  &__clip {
+    background-repeat: no-repeat;
+    height: 80%;
+  }
+}

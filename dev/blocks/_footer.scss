@@ -1,0 +1,84 @@
+@import 'variables';
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  font-family: 'Segoe UI';
+
+  .container{
+    @include tablet {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    @include tablet {
+      width: 270px;
+
+    }
+  
+  
+    // @include desktop {
+    //   justify-content: space-around;
+    // }
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    padding: 20px 0;
+
+    @include tablet {
+      max-width: 270px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__social {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+  &__icon {
+    width: 100%;
+    height: auto;
+
+    &:hover,
+    &:active {
+      fill: #717070;
+    }
+  }
+  &__email-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+  }
+  &__email {
+    font-size: 13px;
+    margin: 0;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+
+  &__axlab {
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    color: #808080;
+  }
+}

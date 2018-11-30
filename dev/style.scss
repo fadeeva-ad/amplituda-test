@@ -1,0 +1,32 @@
+@import 'blocks/variables';
+@import 'blocks/blocks';
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding-top: 120px;
+  color:#000000;
+  font-family: 'Segoe UI';
+}
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+
+  @include tablet-xs {
+    max-width: 480px;
+  }
+
+  @include tablet {
+    max-width: 760px;
+  }
+
+  @include desktop {
+    max-width: 920px;
+  }
+
+  @include desktop-xl {
+    max-width: 1140px;
+  }
+}

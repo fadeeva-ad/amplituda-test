@@ -1,0 +1,28 @@
+@import 'variables';
+
+.main-content {
+  width: 100%;
+  min-height: 75vh;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px;
+
+		@include tablet-xs {
+      max-width: 450px;
+      flex-direction: row;
+		}
+		@include tablet {
+			max-width: 720px;
+		}
+		@include desktop {
+		  max-width: 900px;
+    }
+    
+    @include desktop-xl {
+		  max-width: 1140px;
+		}
+  }
+
+}

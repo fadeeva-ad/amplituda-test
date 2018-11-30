@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Products</title>
+	<link rel="stylesheet" href="public/style.css">
+	<link rel="favicon" href="public/img/favicon.ico">
+</head>
+<body>
+	<!-- start: header area-->
+	<header class="header">
+		<div class="header__wrapper container">
+			<div class="header__block">
+				<ul class="header__list">
+					<li class="header__item">
+						<a href="/products.html" class="header__link">Products</a>
+					</li>
+					<li class="header__item">
+							<a href="/about.html" class="header__link">About</a>
+					</li>
+					<li class="header__item">
+							<a href="/contacts.html" class="header__link">Contacts</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header__block header__block_logo">
+				<a class="header__img-container" href="/products.html">
+					<img class="header__logo" src="public/img/logo.png" alt="amplituda">
+				</a>
+			</div>
+			<div class="header__block">
+				<ul class="header__list">
+					<li class="header__item">
+						<a href="/custom.html" class="header__link">Custom</a>
+					</li>
+					<li class="header__item">
+							<a href="/press.html" class="header__link">Press</a>
+					</li>
+					<li class="header__item">
+						<a href="/gallery.html" class="header__link">Gallery</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- end: header area-->
+	<!-- start: main-slider area -->
+	<div class="main-slider">
+		<div class="main-slider__wrapper swiper-container container">
+			<ul class="main-slider__list swiper-wrapper">
+				<li class="main-slider__item swiper-slide">
+					<a class="main-slider__clip href="#" style="background-image: url('public/img/slider-index-1');"></a>
+					<!-- <img src="public/img/slider-index-1.jpg" alt="slider" class="main-slider__img"> -->
+				</li>
+				<li class="main-slider__item swiper-slide">
+					<img src="public/img/slider-index-2.jpg" alt="slider" class="main-slider__img">
+				</li>
+				<li class="main-slider__item swiper-slide">
+					<img src="public/img/slider-index-3.jpg" alt="slider" class="main-slider__img">
+				</li>
+			</ul>
+			<a class="arrows arrows__left  swiper-button-prev" href="javascript: void(0)">
+        <img class="arrows__icon svg" src="/public/img/arrow-left-direction.svg" alt="arrow left">
+      </a>
+      <a class="arrows arrows__right swiper-button-next" href="javascript: void(0)">
+        <img class="arrows__icon svg" src="public/img/right-black-arrow.svg" alt="arrow right">
+      </a>
+			<div class="main-slider__logo-box"><img src="public/img/footer-logo.png" alt="logo" class="main-slider__logo"></div>
+		</div>
+	</div>
+	<!-- end: main-slider area -->
+	</body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+	<script src="public/build.js"></script>
+	</html>

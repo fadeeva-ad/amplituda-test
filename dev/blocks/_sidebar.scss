@@ -1,0 +1,65 @@
+@import 'variables';
+
+.sidebar {
+  font-family: 'Segoe UI';
+  padding-bottom: 30px;
+  position: relative;
+  background-color: #ffffff;
+
+    @include tablet {  
+      width: 180px;
+      background-color: #ffffff;
+      height: 75vh;
+      padding: 0 30px;
+		}
+
+  &__block {
+    text-align: center;
+
+    @include tablet {
+      position: fixed;
+      z-index: 55;
+      }
+  }
+
+  &__title{
+    margin: 0;
+    padding: 15px 0;
+    font-size: 17px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #000;    
+    font-weight: 600;    
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  &__item {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__category {
+    text-decoration: none;
+    color: #000;    
+    font-weight: 400;    
+    font-size: 16px;
+    padding: 5px;
+
+    &:hover {
+      background-color: #d8d8d8;
+    }
+  }
+}

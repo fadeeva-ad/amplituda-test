@@ -1,0 +1,5 @@
+node_modules/
+.vscode/
+*.log
+thumbs.db
+.DS_Store
