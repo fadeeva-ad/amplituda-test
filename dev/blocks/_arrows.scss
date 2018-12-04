@@ -11,18 +11,26 @@
     left: 20px;
     width: 25px;
     height: auto;
+
+    @include desktop {
+      left: -35px;
+    }
   }
 
   &__right {
     right: 20px;
     width: 25px;
     height: auto;
+
+    @include desktop {
+      right: -35px;
+    }
   }
 
   &__icon {
     width: 100%;
     fill-opacity: 0.7;
     outline: none;
-    transform: scale(2, 2);
+    transform: scale(1.5);
   }
 }

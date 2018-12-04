@@ -14,37 +14,31 @@
 	<!-- start: header area-->
 	<header class="header">
 		<div class="header__wrapper container">
-			<div class="header__block">
-				<ul class="header__list">
-					<li class="header__item">
-						<a href="/products.html" class="header__link">Products</a>
-					</li>
-					<li class="header__item">
-							<a href="/about.html" class="header__link">About</a>
-					</li>
-					<li class="header__item">
-							<a href="/contacts.html" class="header__link">Contacts</a>
-					</li>
-				</ul>
-			</div>
-			<div class="header__block header__block_logo">
-				<a class="header__img-container" href="/index.html">
-					<img class="header__logo" src="public/img/logo.png" alt="amplituda">
-				</a>
-			</div>
-			<div class="header__block">
-				<ul class="header__list">
-					<li class="header__item">
-						<a href="/custom.html" class="header__link">Custom</a>
-					</li>
-					<li class="header__item">
-							<a href="/press.html" class="header__link">Press</a>
-					</li>
-					<li class="header__item">
-						<a href="/gallery.html" class="header__link">Gallery</a>
-					</li>
-				</ul>
-			</div>
+			<ul class="header__list">
+				<li class="header__item">
+					<a href="/products.html" class="header__link">Products</a>
+				</li>
+				<li class="header__item">
+						<a href="/about.html" class="header__link">About</a>
+				</li>
+				<li class="header__item">
+						<a href="/contacts.html" class="header__link">Contacts</a>
+				</li>
+			</ul>
+			<a class="header__img-container" href="/index.html">
+				<img class="header__logo" src="public/img/logo.png" alt="amplituda">
+			</a>
+			<ul class="header__list">
+				<li class="header__item">
+					<a href="/custom.html" class="header__link">Custom</a>
+				</li>
+				<li class="header__item">
+						<a href="/press.html" class="header__link">Press</a>
+				</li>
+				<li class="header__item">
+					<a href="/gallery.html" class="header__link">Gallery</a>
+				</li>
+			</ul>
 		</div>
 	</header>
 	<!-- end: header area-->
@@ -71,40 +65,182 @@
 			</div>
 			<div class="gallery">
 				<div class="gallery__item">
-					<a href="/view-page.html" class="gallery__link" style="background-image: url('public/img/gallery.jpg');">
+					<a href="#gi1" class="gallery__link" data-fancybox="" data-modal="true" data-caption="" style="background-image: url('public/img/head-page.jpg');">
 					</a>
-					<p class="gallery__text">Viev all</p>
+					<!-- added block for creation modal window, where contain information about product -->
+					<div id="gi1" class="gallery__item-details">
+						<div class="gallery__modal-wrapper">
+							<button type="button" data-fancybox-close="" class="gallery__close-header" title="Close">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
+											<path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
+									</svg>
+							</button>
+							<span class="gallery__modal-ttl">Thai crown</span>	
+						</div>
+						<img src="public/img/head-page.jpg" alt="">
+						<div class="gallery__footer-wrapper">
+							<p class="gallery__modal-price">1000 р/сутки.</p>
+							<button type="button" data-fancybox-close="" class="gallery__btn-close" title="Close">Close
+							</button>
+						</div>
+					</div>
+					<p class="gallery__text">head</p>
 				</div>
 				<div class="gallery__item">
-					<a href="/head-page.html" class="gallery__link" style="background-image: url('public/img/gallery.jpg');">
-					</a>
-					<p class="gallery__text">Head</p>
-				</div>
-				<div class="gallery__item">
-					<a href="/face-page.html" class="gallery__link" style="background-image: url('public/img/gallery.jpg');">
-					</a>
-					<p class="gallery__text">Face</p>
-				</div>
-				<div class="gallery__item">
-					<a href="/body-page.html" class="gallery__link" style="background-image: url('public/img/gallery.jpg');">
-					</a>
-					<p class="gallery__text">Body</p>
-				</div>
-				<div class="gallery__item">
-					<a href="/neck-page.html" class="gallery__link" style="background-image: url('public/img/gallery.jpg');">
-					</a>
-					<p class="gallery__text">Neck</p>
-				</div>
-				<div class="gallery__item">
-					<a href="/other-page.html" class="gallery__link" style="background-image: url('public/img/gallery.jpg');">
-					</a>
-					<p class="gallery__text">other</p>
-				</div>
-				<div class="gallery__item">
-					<a href="/shoes-page.html" class="gallery__link" style="background-image: url('public/img/gallery.jpg');">
-					</a>
-					<p class="gallery__text">shoes</p>
-				</div>
+						<a href="#gi1" class="gallery__link" data-fancybox="" data-modal="true" data-caption="" style="background-image: url('public/img/head-page.jpg');">
+						</a>
+						<!-- added block for creation modal window, where contain information about product -->
+						<div id="gi1" class="gallery__item-details">
+							<div class="gallery__modal-wrapper">
+								<button type="button" data-fancybox-close="" class="gallery__close-header" title="Close">
+										<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
+												<path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
+										</svg>
+								</button>
+								<span class="gallery__modal-ttl">Thai crown</span>	
+							</div>
+							<img src="public/img/head-page.jpg" alt="">
+							<div class="gallery__footer-wrapper">
+								<p class="gallery__modal-price">1000 р/сутки.</p>
+								<button type="button" data-fancybox-close="" class="gallery__btn-close" title="Close">Close
+								</button>
+							</div>
+						</div>
+						<p class="gallery__text">head</p>
+					</div>
+					<div class="gallery__item">
+							<a href="#gi1" class="gallery__link" data-fancybox="" data-modal="true" data-caption="" style="background-image: url('public/img/head-page.jpg');">
+							</a>
+							<!-- added block for creation modal window, where contain information about product -->
+							<div id="gi1" class="gallery__item-details">
+								<div class="gallery__modal-wrapper">
+									<button type="button" data-fancybox-close="" class="gallery__close-header" title="Close">
+											<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
+													<path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
+											</svg>
+									</button>
+									<span class="gallery__modal-ttl">Thai crown</span>	
+								</div>
+								<img src="public/img/head-page.jpg" alt="">
+								<div class="gallery__footer-wrapper">
+									<p class="gallery__modal-price">1000 р/сутки.</p>
+									<button type="button" data-fancybox-close="" class="gallery__btn-close" title="Close">Close
+									</button>
+								</div>
+							</div>
+							<p class="gallery__text">head</p>
+						</div>
+						<div class="gallery__item">
+							<a href="#gi1" class="gallery__link" data-fancybox="" data-modal="true" data-caption="" style="background-image: url('public/img/head-page.jpg');">
+							</a>
+							<!-- added block for creation modal window, where contain information about product -->
+							<div id="gi1" class="gallery__item-details">
+								<div class="gallery__modal-wrapper">
+									<button type="button" data-fancybox-close="" class="gallery__close-header" title="Close">
+											<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
+													<path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
+											</svg>
+									</button>
+									<span class="gallery__modal-ttl">Thai crown</span>	
+								</div>
+								<img src="public/img/head-page.jpg" alt="">
+								<div class="gallery__footer-wrapper">
+								<p class="gallery__modal-price">1000 р/сутки.</p>
+								<button type="button" data-fancybox-close="" class="gallery__btn-close" title="Close">Close
+								</button>
+							</div>
+							</div>
+								<p class="gallery__text">head</p>
+						</div>
+							<div class="gallery__item">
+									<a href="#gi1" class="gallery__link" data-fancybox="" data-modal="true" data-caption="" style="background-image: url('public/img/head-page.jpg');">
+									</a>
+									<!-- added block for creation modal window, where contain information about product -->
+									<div id="gi1" class="gallery__item-details">
+										<div class="gallery__modal-wrapper">
+											<button type="button" data-fancybox-close="" class="gallery__close-header" title="Close">
+													<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
+															<path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
+													</svg>
+											</button>
+											<span class="gallery__modal-ttl">Thai crown</span>	
+										</div>
+										<img src="public/img/head-page.jpg" alt="">
+										<div class="gallery__footer-wrapper">
+											<p class="gallery__modal-price">1000 р/сутки.</p>
+											<button type="button" data-fancybox-close="" class="gallery__btn-close" title="Close">Close
+											</button>
+										</div>
+									</div>
+									<p class="gallery__text">head</p>
+								</div>
+								<div class="gallery__item">
+										<a href="#gi1" class="gallery__link" data-fancybox="" data-modal="true" data-caption="" style="background-image: url('public/img/head-page.jpg');">
+										</a>
+										<!-- added block for creation modal window, where contain information about product -->
+										<div id="gi1" class="gallery__item-details">
+											<div class="gallery__modal-wrapper">
+												<button type="button" data-fancybox-close="" class="gallery__close-header" title="Close">
+														<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
+																<path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
+														</svg>
+												</button>
+												<span class="gallery__modal-ttl">Thai crown</span>	
+											</div>
+											<img src="public/img/head-page.jpg" alt="">
+											<div class="gallery__footer-wrapper">
+												<p class="gallery__modal-price">1000 р/сутки.</p>
+												<button type="button" data-fancybox-close="" class="gallery__btn-close" title="Close">Close
+												</button>
+											</div>
+										</div>
+										<p class="gallery__text">head</p>
+									</div>
+									<div class="gallery__item">
+											<a href="#gi1" class="gallery__link" data-fancybox="" data-modal="true" data-caption="" style="background-image: url('public/img/head-page.jpg');">
+											</a>
+											<!-- added block for creation modal window, where contain information about product -->
+											<div id="gi1" class="gallery__item-details">
+												<div class="gallery__modal-wrapper">
+													<button type="button" data-fancybox-close="" class="gallery__close-header" title="Close">
+															<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
+																	<path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
+															</svg>
+													</button>
+													<span class="gallery__modal-ttl">Thai crown</span>	
+												</div>
+												<img src="public/img/head-page.jpg" alt="">
+												<div class="gallery__footer-wrapper">
+													<p class="gallery__modal-price">1000 р/сутки.</p>
+													<button type="button" data-fancybox-close="" class="gallery__btn-close" title="Close">Close
+													</button>
+												</div>
+											</div>
+											<p class="gallery__text">head</p>
+										</div>
+										<div class="gallery__item">
+												<a href="#gi1" class="gallery__link" data-fancybox="" data-modal="true" data-caption="" style="background-image: url('public/img/head-page.jpg');">
+												</a>
+												<!-- added block for creation modal window, where contain information about product -->
+												<div id="gi1" class="gallery__item-details">
+													<div class="gallery__modal-wrapper">
+														<button type="button" data-fancybox-close="" class="gallery__close-header" title="Close">
+																<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
+																		<path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
+																</svg>
+														</button>
+														<span class="gallery__modal-ttl">Thai crown</span>	
+													</div>
+													<img src="public/img/head-page.jpg" alt="">
+													<div class="gallery__footer-wrapper">
+														<p class="gallery__modal-price">1000 р/сутки.</p>
+														<button type="button" data-fancybox-close="" class="gallery__btn-close" title="Close">Close
+														</button>
+													</div>
+												</div>
+												<p class="gallery__text">head</p>
+											</div>
+
 			</div>
 			<!-- content -->
 
@@ -133,5 +269,7 @@
 		</div>
 	</footer>
 </body>
+	<script src="dev/js/jquery.min.js"></script>
+	<script src="dev/js/jquery.fancybox.min.js"></script>
 	<script src="public/build.js"></script>
 </html>

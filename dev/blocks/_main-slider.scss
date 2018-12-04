@@ -2,12 +2,36 @@
 
 .main-slider {
   width: 100%;
+  height: 40vh;
+  overflow: hidden;
+
+  @include tablet {
+    height: 55vh;
+  }
+  @include desktop {
+    height: 60vh;
+  }
 
   &__wrapper {
     width: 100%;
     padding: 0px 15px;
 
+  //  animation for arrows in main-slider
+    &:hover .arrows__left {
+      @include desktop {
+        transform: translateX(60px);
+        transition: transform .4s;
+      }   
+    }
+
+    &:hover .arrows__right {
+      @include desktop {
+        transform: translateX(-60px);
+        transition: transform .4s;
+      }   
+    }
   }
+
 
   &__list {
     position: relative;
@@ -21,16 +45,6 @@
   }
 
   &__img {
-    width: 100%;
-    height: auto;
-  }
-
-  &__logo-box {
-    width: 100%;
-    height: auto;
-  }
-
-  &__logo {
     width: 100%;
     height: auto;
   }

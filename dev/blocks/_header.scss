@@ -15,6 +15,7 @@
 		display: flex;
 		justify-content: space-between;
 		flex-direction: column;
+		align-items: center;
 
 		@include tablet-xs {
 			max-width: 480px;
@@ -41,6 +42,7 @@
 	}
 
 	&__list {
+		width: 100%;
 		display: flex;
 		list-style: none;
 		text-transform: uppercase;
@@ -49,10 +51,17 @@
 		justify-content: space-around;
 		font-size: 13px;
 		font-weight: 600;
+		flex: auto;
 		
+		@include tablet {
+			font-size: 16px;
+			justify-content: space-around;
+			max-width: 40%;
+		}
 		@include desktop {
 			font-size: 16px;
-			justify-content: space-between;
+			justify-content: space-around;
+			max-width: 40%;
 		}
 	}
 
@@ -71,7 +80,7 @@
 		}
 
 		@include tablet {
-			padding: 20px 5px;
+			padding: 20px;
 		}
 	}
 	&__img-container {

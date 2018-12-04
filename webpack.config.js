@@ -96,13 +96,13 @@ module.exports = {
               to: '.public/fonts'
             }
         ]),
-        new ImageminPlugin({ 
-          test: /\.(jpe?g|png|gif|svg)$/i,
-          disable: process.env.NODE_ENV == 'development', // Disable during development
-          pngquant: {
-            quality: '50-55'
-          }
-        }),  
+        // new ImageminPlugin({ 
+        //   test: /\.(jpe?g|png|gif|svg)$/i,
+        //   disable: process.env.NODE_ENV == 'development', // Disable during development
+        //   pngquant: {
+        //     quality: '50-55'
+        //   }
+        // }),  
         new OptimizeCssAssetsPlugin({
             assetNameRegExp:  /\.css$/,
             cssProcessor: require('cssnano'),
